@@ -11,6 +11,13 @@ Static GitHub Pages website at `www.commercialconcretegrinding.co.nz`, now posit
 - `docs/search-and-specifier-research.md` - keyword/specifier notes that shaped the Marmoleum-first rewrite.
 - `CNAME` - custom domain for GitHub Pages.
 
+## Client interaction
+
+The site includes a free static "Project assistant" widget. It is not a paid AI
+bot and does not need a backend. It asks a short Marmoleum/commercial vinyl
+project questionnaire and opens a pre-filled email to
+`nick@commercialconcretegrinding.co.nz`.
+
 ## Publish on GitHub Pages
 
 1. Push this folder to a public GitHub repository.
