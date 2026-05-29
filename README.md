@@ -1,6 +1,6 @@
-# Commercial Concrete Grinding website
+# Marmoleum Installation Experts website
 
-Static replacement for the Wix site at `www.commercialconcretegrinding.co.nz`, ready for GitHub Pages.
+Static GitHub Pages website at `www.commercialconcretegrinding.co.nz`, now positioned around Auckland Forbo Marmoleum installation, sustainable commercial linoleum, and commercial vinyl flooring.
 
 ## Files
 
@@ -8,6 +8,7 @@ Static replacement for the Wix site at `www.commercialconcretegrinding.co.nz`, r
 - `styles.css` - responsive design.
 - `script.js` - mobile navigation and email enquiry behaviour.
 - `assets/` - project-local generated replacement images.
+- `docs/search-and-specifier-research.md` - keyword/specifier notes that shaped the Marmoleum-first rewrite.
 - `CNAME` - custom domain for GitHub Pages.
 
 ## Publish on GitHub Pages

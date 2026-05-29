@@ -43,7 +43,7 @@ if (contactForm && formStatus) {
       .join("\n");
 
     const mailto = new URL("mailto:nick@commercialconcretegrinding.co.nz");
-    mailto.searchParams.set("subject", `Website enquiry from ${name || "Commercial Concrete Grinding site"}`);
+    mailto.searchParams.set("subject", `Marmoleum flooring enquiry from ${name || "website"}`);
     mailto.searchParams.set("body", body);
 
     window.location.href = mailto.toString();
