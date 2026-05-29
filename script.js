@@ -60,7 +60,7 @@ const assistantQuestions = [
   {
     key: "flooringType",
     prompt: "What are you mainly looking for?",
-    options: ["Forbo Marmoleum installation", "Commercial vinyl flooring", "Not sure yet"]
+    options: ["Marmoleum installation", "Commercial vinyl flooring", "Not sure yet"]
   },
   {
     key: "siteType",

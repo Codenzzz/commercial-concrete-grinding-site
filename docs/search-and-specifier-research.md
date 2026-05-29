@@ -4,12 +4,12 @@ Date: 2026-05-29
 
 ## Positioning Decision
 
-The site should lead with **Forbo Marmoleum installation experts** rather than concrete grinding or generic flooring.
+The site should lead with **Marmoleum installation experts** rather than concrete grinding or generic flooring.
 
 Reason:
 
 - The user no longer wants to promote concrete grinding.
-- "Forbo Marmoleum" is the highest-intent term for architects/specifiers who already know the product.
+- "Marmoleum" is the highest-intent term for architects/specifiers who already know the product.
 - Broader buyer searches are more likely to use "commercial vinyl flooring", "linoleum flooring", "vinyl flooring installation", and "commercial flooring installation".
 - The page now targets both: Marmoleum as the specialist offer, commercial vinyl/resilient flooring as the wider search capture.
 
@@ -18,14 +18,14 @@ Reason:
 Method: `pytrends`, NZ, last five years, terms:
 
 - `Marmoleum`
-- `Forbo Marmoleum`
+- `Marmoleum`
 - `commercial vinyl flooring`
 - `vinyl flooring installation`
 - `linoleum flooring`
 
 Result:
 
-- NZ trend volume for exact `Forbo Marmoleum` was too low to show meaningful trend data.
+- NZ trend volume for exact branded Marmoleum wording was too low to show meaningful trend data.
 - Broader terms showed more measurable demand:
   - `commercial vinyl flooring`
   - `linoleum flooring`
@@ -34,23 +34,21 @@ Result:
 
 Implication:
 
-- Use `Forbo Marmoleum` prominently for specifier/high-intent trust.
+- Use `Marmoleum` prominently for specifier/high-intent trust.
 - Also include `commercial vinyl flooring`, `linoleum flooring`, `sheet flooring`, `resilient flooring`, and `installation Auckland` for broader discovery.
 
 ## Product and Specifier Evidence
 
-Forbo official Marmoleum page:
+Official Marmoleum product material:
 
-- Forbo presents Marmoleum as natural, durable, sustainable and suitable for many applications.
-- Forbo states Marmoleum is made from mostly natural raw materials including linseed oil, wood flour, limestone, resin and jute.
-- Source: https://www.forbo.com/flooring/en-us/commercial-products/marmoleum/cfctp7
+- Marmoleum is presented as natural, durable, sustainable and suitable for many applications.
+- Marmoleum is described as being made from mostly natural raw materials including linseed oil, wood flour, limestone, resin and jute.
 
 EnviroSpec New Zealand listing:
 
-- Lists Forbo Marmoleum under resilient flooring.
+- Lists Marmoleum under resilient flooring.
 - Describes it as natural linoleum flooring with many colours, patterns and styles.
-- Lists Inzide Commercial as the NZ supplier and Forbo Flooring Systems as manufacturer.
-- Source: https://envirospec.nz/products/interior-fit-out-items/floors/resilient-flooring/forbo-marmoleum/
+- Lists Inzide Commercial as the NZ supplier.
 
 Inzide New Zealand supplier surface:
 
@@ -61,7 +59,7 @@ Inzide New Zealand supplier surface:
 
 ## On-Page SEO Terms Added
 
-- Forbo Marmoleum installation
+- Marmoleum installation
 - Marmoleum installation experts
 - commercial Marmoleum installer Auckland
 - commercial vinyl flooring
@@ -78,7 +76,7 @@ Inzide New Zealand supplier surface:
 
 ## Content Guardrails
 
-- Do not claim to sell Forbo product directly unless confirmed.
-- Do not use official Forbo imagery or logos without permission.
+- Do not claim to sell product directly unless confirmed.
+- Do not use official manufacturer imagery or logos without permission.
 - Generated images should be described as Marmoleum-style installation/finish imagery.
 - Keep sustainability language evidence-bound: natural linoleum, durable, sustainable positioning, raw material story, and proper installation supporting long service life.

@@ -1,6 +1,6 @@
 # Marmoleum Installation Experts website
 
-Static GitHub Pages website at `www.commercialconcretegrinding.co.nz`, now positioned around Auckland Forbo Marmoleum installation, sustainable commercial linoleum, and commercial vinyl flooring.
+Static GitHub Pages website at `www.commercialconcretegrinding.co.nz`, now positioned around Auckland Marmoleum installation, sustainable commercial linoleum, and commercial vinyl flooring.
 
 ## Files
 
