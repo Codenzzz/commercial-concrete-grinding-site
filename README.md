@@ -9,6 +9,7 @@ Static GitHub Pages website at `www.commercialconcretegrinding.co.nz`, now posit
 - `script.js` - mobile navigation and email enquiry behaviour.
 - `assets/` - project-local generated replacement images.
 - `docs/search-and-specifier-research.md` - keyword/specifier notes that shaped the Marmoleum-first rewrite.
+- `robots.txt` and `sitemap.xml` - crawl signals for Google Search Console.
 - `CNAME` - custom domain for GitHub Pages.
 
 ## Client interaction
@@ -51,6 +52,16 @@ Optional IPv6 records:
 ```
 
 DNS can take up to 24 hours to propagate.
+
+## Google Search Console
+
+After DNS points at GitHub Pages, add the domain in Google Search Console and submit:
+
+```text
+https://www.commercialconcretegrinding.co.nz/sitemap.xml
+```
+
+Use URL Inspection on `https://www.commercialconcretegrinding.co.nz/` and request indexing after the live page resolves to GitHub Pages.
 
 ## Current DNS check
 
