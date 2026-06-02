@@ -1,16 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-labelledby="title">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title">
   <title id="title">Commercial Concrete Grinding logo</title>
-  <rect width="680" height="300" fill="#ffffff"/>
-  <g fill="#000000" transform="translate(215 18)">
-    <polygon points="54,0 121,0 104,34 26,34"/>
-    <polygon points="142,0 208,0 237,34 125,34"/>
-    <polygon points="229,0 296,0 324,34 246,34"/>
-    <polygon points="34,68 113,68 160,204"/>
-    <polygon points="138,68 242,68 190,204"/>
-    <polygon points="267,68 346,68 220,204"/>
+  <rect width="640" height="360" fill="#ffffff"/>
+  <g fill="#000000" transform="translate(173 24)">
+    <polygon points="44,0 114,0 96,38 15,38"/>
+    <polygon points="138,0 208,0 235,38 119,38"/>
+    <polygon points="232,0 302,0 332,38 251,38"/>
+    <polygon points="30,78 116,78 162,214"/>
+    <polygon points="137,78 230,78 186,214"/>
+    <polygon points="251,78 337,78 210,214"/>
   </g>
-  <text x="340" y="236" text-anchor="middle" fill="#000000"
-    font-family="Georgia, 'Times New Roman', serif" font-size="44" letter-spacing="9">COMMERCIAL</text>
-  <text x="340" y="284" text-anchor="middle" fill="#000000"
-    font-family="Georgia, 'Times New Roman', serif" font-size="44" letter-spacing="6">CONCRETE GRINDING</text>
+  <text x="320" y="276" text-anchor="middle" fill="#000000"
+    font-family="Georgia, 'Times New Roman', serif" font-size="42" letter-spacing="11">COMMERCIAL</text>
+  <text x="320" y="328" text-anchor="middle" fill="#000000"
+    font-family="Georgia, 'Times New Roman', serif" font-size="42" letter-spacing="5">CONCRETE GRINDING</text>
 </svg>

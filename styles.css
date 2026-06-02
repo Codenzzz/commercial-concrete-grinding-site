@@ -128,10 +128,10 @@ a {
 }
 
 .home-page .brand-logo {
-  width: min(292px, 54vw);
+  width: min(240px, 44vw);
   height: auto;
   display: block;
-  padding: 5px 8px;
+  padding: 6px 8px;
   background: #ffffff;
 }
 
@@ -938,8 +938,8 @@ a {
   }
 
   .home-page .brand-logo {
-    width: min(224px, 58vw);
-    padding: 4px 6px;
+    width: min(188px, 54vw);
+    padding: 5px 7px;
   }
 
   .brand {
