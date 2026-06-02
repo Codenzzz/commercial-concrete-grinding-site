@@ -108,6 +108,11 @@ function clearAssistantActions() {
 }
 
 function buildAssistantMailto() {
+  const email = buildAssistantEmail();
+  return email.mailto;
+}
+
+function buildAssistantEmail() {
   const body = [
     "Marmoleum / commercial flooring enquiry",
     "",
@@ -118,21 +123,82 @@ function buildAssistantMailto() {
     `Details: ${assistantState.answers.details || ""}`
   ].join("\n");
 
+  const subject = "Marmoleum / commercial flooring enquiry";
   const mailto = new URL("mailto:nick@commercialconcretegrinding.co.nz");
-  mailto.searchParams.set("subject", "Marmoleum / commercial flooring enquiry");
+  mailto.searchParams.set("subject", subject);
   mailto.searchParams.set("body", body);
-  return mailto.toString();
+  return {
+    body,
+    mailto: mailto.toString(),
+    subject
+  };
+}
+
+async function copyAssistantEmail() {
+  const email = buildAssistantEmail();
+  const text = [
+    "To: nick@commercialconcretegrinding.co.nz",
+    `Subject: ${email.subject}`,
+    "",
+    email.body
+  ].join("\n");
+
+  if (navigator.clipboard && window.isSecureContext) {
+    await navigator.clipboard.writeText(text);
+    return true;
+  }
+
+  const textarea = document.createElement("textarea");
+  textarea.value = text;
+  textarea.setAttribute("readonly", "");
+  textarea.style.position = "fixed";
+  textarea.style.left = "-9999px";
+  document.body.appendChild(textarea);
+  textarea.select();
+  const copied = document.execCommand("copy");
+  textarea.remove();
+  return copied;
 }
 
 function renderAssistantSummary() {
   clearAssistantActions();
   appendAssistantMessage("I have enough to prepare an email for Nick.");
 
-  const link = document.createElement("a");
-  link.href = buildAssistantMailto();
-  link.className = "assistant-primary";
-  link.textContent = "Email this to Nick";
-  assistantActions.appendChild(link);
+  const emailButton = document.createElement("button");
+  emailButton.type = "button";
+  emailButton.className = "assistant-primary";
+  emailButton.textContent = "Email this to Nick";
+  emailButton.addEventListener("click", async () => {
+    try {
+      await copyAssistantEmail();
+      appendAssistantMessage(
+        "If your email app does not open, the enquiry has been copied. Paste it into an email to nick@commercialconcretegrinding.co.nz."
+      );
+    } catch {
+      appendAssistantMessage(
+        "If your email app does not open, email Nick directly at nick@commercialconcretegrinding.co.nz."
+      );
+    }
+
+    window.location.href = buildAssistantMailto();
+  });
+  assistantActions.appendChild(emailButton);
+
+  const copy = document.createElement("button");
+  copy.type = "button";
+  copy.textContent = "Copy enquiry";
+  copy.addEventListener("click", async () => {
+    try {
+      if (await copyAssistantEmail()) {
+        appendAssistantMessage("Copied. Paste it into an email to nick@commercialconcretegrinding.co.nz.");
+      } else {
+        appendAssistantMessage("Copy did not work here. Email Nick directly at nick@commercialconcretegrinding.co.nz.");
+      }
+    } catch {
+      appendAssistantMessage("Copy did not work here. Email Nick directly at nick@commercialconcretegrinding.co.nz.");
+    }
+  });
+  assistantActions.appendChild(copy);
 
   const restart = document.createElement("button");
   restart.type = "button";
