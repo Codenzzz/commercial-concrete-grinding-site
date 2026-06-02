@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-labelledby="title">
+  <title id="title">Commercial Concrete Grinding logo</title>
+  <rect width="680" height="300" fill="#ffffff"/>
+  <g fill="#000000" transform="translate(215 18)">
+    <polygon points="54,0 121,0 104,34 26,34"/>
+    <polygon points="142,0 208,0 237,34 125,34"/>
+    <polygon points="229,0 296,0 324,34 246,34"/>
+    <polygon points="34,68 113,68 160,204"/>
+    <polygon points="138,68 242,68 190,204"/>
+    <polygon points="267,68 346,68 220,204"/>
+  </g>
+  <text x="340" y="236" text-anchor="middle" fill="#000000"
+    font-family="Georgia, 'Times New Roman', serif" font-size="44" letter-spacing="9">COMMERCIAL</text>
+  <text x="340" y="284" text-anchor="middle" fill="#000000"
+    font-family="Georgia, 'Times New Roman', serif" font-size="44" letter-spacing="6">CONCRETE GRINDING</text>
+</svg>

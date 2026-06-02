@@ -109,18 +109,38 @@ a {
 }
 
 .home-page {
-  --bg: #f5f6f1;
-  --ink: #20201d;
-  --muted: #5b5e58;
-  --line: #ddded6;
-  --green: #285f50;
-  --green-soft: #e6f1e8;
-  --accent-dark: #1b6f63;
+  --bg: #0c0c0d;
+  --surface: #171718;
+  --ink: #f7f7f4;
+  --muted: #c5c2bd;
+  --line: #2b2b2d;
+  --accent: #e3222a;
+  --accent-dark: #b70f18;
+  --green: #e3222a;
+  --green-soft: rgba(227, 34, 42, 0.14);
+  --teal: #b70f18;
+  --shadow: 0 22px 68px rgba(0, 0, 0, 0.42);
 }
 
-.home-page .brand-mark {
-  border-color: #20201d;
-  background: linear-gradient(135deg, #ffcf35, #e5e1d6 48%, #20a7a5);
+.home-page .site-header {
+  background: rgba(8, 8, 9, 0.96);
+  border-bottom: 3px solid var(--accent-dark);
+}
+
+.home-page .brand-logo {
+  width: min(292px, 54vw);
+  height: auto;
+  display: block;
+  padding: 5px 8px;
+  background: #ffffff;
+}
+
+.home-page .site-nav a {
+  color: #ffffff;
+}
+
+.home-page .site-nav a:hover {
+  color: #ff4a4f;
 }
 
 .site-nav {
@@ -171,7 +191,7 @@ a {
 
 .home-page .hero {
   background:
-    linear-gradient(90deg, rgba(20, 20, 18, 0.9), rgba(20, 20, 18, 0.64) 43%, rgba(20, 20, 18, 0.12)),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.93), rgba(22, 8, 9, 0.78) 43%, rgba(84, 9, 13, 0.2)),
     url("assets/concrete-grinding-hero.png") center / cover;
 }
 
@@ -181,6 +201,54 @@ a {
 
 .home-page .hero-subtitle {
   max-width: 650px;
+}
+
+.home-page .eyebrow {
+  color: #ff4a4f;
+}
+
+.home-page .button.primary {
+  background: linear-gradient(135deg, #ff3138, #a80711);
+  color: #ffffff;
+  box-shadow: 0 12px 28px rgba(227, 34, 42, 0.34);
+}
+
+.home-page .button.primary:hover {
+  background: linear-gradient(135deg, #ff565d, #cf121f);
+}
+
+.home-page .button.secondary {
+  border-color: rgba(255, 255, 255, 0.86);
+  background: rgba(0, 0, 0, 0.42);
+  color: #ffffff;
+}
+
+.home-page .button.secondary:hover {
+  border-color: #ff4a4f;
+  background: rgba(227, 34, 42, 0.18);
+}
+
+.home-page .grinding-button {
+  min-width: 168px;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+
+.home-page .intro-band {
+  background: #3c090d;
+}
+
+.home-page .intro-band div {
+  background: linear-gradient(180deg, #171718, #0f0f10);
+  border-top: 4px solid var(--accent);
+}
+
+.home-page .intro-band strong {
+  color: #ffffff;
+}
+
+.home-page .intro-band span {
+  color: #d8d4ce;
 }
 
 .hero-inner {
@@ -482,13 +550,51 @@ a {
 
 .home-page .marmoleum-feature {
   background:
-    radial-gradient(circle at top left, rgba(255, 207, 53, 0.22), transparent 34%),
-    radial-gradient(circle at bottom right, rgba(32, 167, 165, 0.3), transparent 38%),
-    #143a34;
+    linear-gradient(135deg, #080809, #1b0507 52%, #3f090e);
 }
 
 .home-page .marmoleum-feature .work-item {
-  background: #183f38;
+  border-color: rgba(255, 74, 79, 0.34);
+  background: #141416;
+}
+
+.home-page .service-item {
+  border-color: #323234;
+  background: #171718;
+}
+
+.home-page .service-item.featured {
+  border-color: rgba(227, 34, 42, 0.54);
+  background:
+    linear-gradient(135deg, rgba(227, 34, 42, 0.22), rgba(10, 10, 11, 0.98)),
+    #171718;
+}
+
+.home-page .proof-list div {
+  border-left-color: var(--accent);
+  background: linear-gradient(90deg, rgba(227, 34, 42, 0.16), rgba(227, 34, 42, 0));
+}
+
+.home-page .proof-list span,
+.home-page .contact-copy a {
+  color: #ff4a4f;
+}
+
+.home-page .contact-form {
+  border-color: #343436;
+  background: #171718;
+}
+
+.home-page .contact-form input,
+.home-page .contact-form textarea {
+  border-color: #4b4b4e;
+  background: #0f0f10;
+  color: #ffffff;
+}
+
+.home-page .site-footer {
+  background: #050505;
+  border-top: 3px solid var(--accent-dark);
 }
 
 .contact-section {
@@ -766,7 +872,7 @@ a {
 
   .home-page .hero {
     background:
-      linear-gradient(180deg, rgba(20, 20, 18, 0.84), rgba(20, 20, 18, 0.62)),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(32, 6, 8, 0.74)),
       url("assets/concrete-grinding-hero.png") 68% center / cover;
   }
 
@@ -829,6 +935,11 @@ a {
   .brand-name {
     max-width: 190px;
     line-height: 1.1;
+  }
+
+  .home-page .brand-logo {
+    width: min(224px, 58vw);
+    padding: 4px 6px;
   }
 
   .brand {
