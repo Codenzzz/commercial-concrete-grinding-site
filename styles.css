@@ -128,10 +128,10 @@ a {
 }
 
 .home-page .brand-logo {
-  width: min(330px, 44vw);
-  height: 118px;
+  width: min(500px, 52vw);
+  height: 138px;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
   object-position: 50% 50%;
 }
 
@@ -938,8 +938,8 @@ a {
   }
 
   .home-page .brand-logo {
-    width: min(270px, 70vw);
-    height: 92px;
+    width: min(340px, 86vw);
+    height: 96px;
   }
 
   .brand {
