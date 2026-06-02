@@ -47,8 +47,12 @@ if (contactForm && formStatus) {
       .filter(Boolean)
       .join("\n");
 
+    const pageTopic = document.body.classList.contains("home-page")
+      ? "Commercial concrete grinding enquiry"
+      : "Marmoleum flooring enquiry";
+
     const mailto = new URL("mailto:nick@commercialconcretegrinding.co.nz");
-    mailto.searchParams.set("subject", `Marmoleum flooring enquiry from ${name || "website"}`);
+    mailto.searchParams.set("subject", `${pageTopic} from ${name || "website"}`);
     mailto.searchParams.set("body", body);
 
     window.location.href = mailto.toString();

@@ -1,10 +1,11 @@
-# Marmoleum Installation Experts website
+# Commercial Concrete Grinding website
 
-Static GitHub Pages website at `www.commercialconcretegrinding.co.nz`, now positioned around Auckland Marmoleum installation, sustainable commercial linoleum, and commercial vinyl flooring.
+Static GitHub Pages website at `www.commercialconcretegrinding.co.nz`. The root page is a Commercial Concrete Grinding landing page, with a dedicated Marmoleum installation page for sustainable commercial linoleum and commercial vinyl flooring.
 
 ## Files
 
-- `index.html` - site markup and SEO metadata.
+- `index.html` - Commercial Concrete Grinding homepage and SEO metadata.
+- `marmoleum.html` - Marmoleum installation experts page.
 - `styles.css` - responsive design.
 - `script.js` - mobile navigation and email enquiry behaviour.
 - `assets/` - project-local generated replacement images.
@@ -14,9 +15,9 @@ Static GitHub Pages website at `www.commercialconcretegrinding.co.nz`, now posit
 
 ## Client interaction
 
-The site includes a free static "Project assistant" widget. It is not a paid AI
-bot and does not need a backend. It asks a short Marmoleum/commercial vinyl
-project questionnaire and opens a pre-filled email to
+The Marmoleum page includes a free static "Project assistant" widget. It is not
+a paid AI bot and does not need a backend. It asks a short
+Marmoleum/commercial vinyl project questionnaire and opens a pre-filled email to
 `nick@commercialconcretegrinding.co.nz`.
 
 ## Publish on GitHub Pages

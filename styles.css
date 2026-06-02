@@ -108,6 +108,21 @@ a {
   letter-spacing: 0;
 }
 
+.home-page {
+  --bg: #f5f6f1;
+  --ink: #20201d;
+  --muted: #5b5e58;
+  --line: #ddded6;
+  --green: #285f50;
+  --green-soft: #e6f1e8;
+  --accent-dark: #1b6f63;
+}
+
+.home-page .brand-mark {
+  border-color: #20201d;
+  background: linear-gradient(135deg, #ffcf35, #e5e1d6 48%, #20a7a5);
+}
+
 .site-nav {
   display: flex;
   align-items: center;
@@ -152,6 +167,20 @@ a {
     linear-gradient(90deg, rgba(8, 42, 36, 0.9), rgba(8, 42, 36, 0.58) 44%, rgba(8, 42, 36, 0.06)),
     url("assets/marmoleum-hero.png") center / cover;
   color: #ffffff;
+}
+
+.home-page .hero {
+  background:
+    linear-gradient(90deg, rgba(20, 20, 18, 0.9), rgba(20, 20, 18, 0.64) 43%, rgba(20, 20, 18, 0.12)),
+    url("assets/concrete-grinding-hero.png") center / cover;
+}
+
+.home-page .hero h1 {
+  max-width: 920px;
+}
+
+.home-page .hero-subtitle {
+  max-width: 650px;
 }
 
 .hero-inner {
@@ -447,6 +476,21 @@ a {
   text-decoration: underline;
 }
 
+.work-item a.button:hover {
+  text-decoration: none;
+}
+
+.home-page .marmoleum-feature {
+  background:
+    radial-gradient(circle at top left, rgba(255, 207, 53, 0.22), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(32, 167, 165, 0.3), transparent 38%),
+    #143a34;
+}
+
+.home-page .marmoleum-feature .work-item {
+  background: #183f38;
+}
+
 .contact-section {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1fr);
@@ -718,6 +762,17 @@ a {
     background:
       linear-gradient(180deg, rgba(8, 42, 36, 0.78), rgba(8, 42, 36, 0.58)),
       url("assets/marmoleum-hero.png") 68% center / cover;
+  }
+
+  .home-page .hero {
+    background:
+      linear-gradient(180deg, rgba(20, 20, 18, 0.84), rgba(20, 20, 18, 0.62)),
+      url("assets/concrete-grinding-hero.png") 68% center / cover;
+  }
+
+  .home-page .hero-subtitle {
+    max-width: 320px;
+    overflow-wrap: break-word;
   }
 
   .hero h1 {
