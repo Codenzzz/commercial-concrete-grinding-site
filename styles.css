@@ -257,6 +257,11 @@ a {
     url("assets/concrete-grinding-hero.png") center / cover;
 }
 
+.app-fast-line {
+  max-width: 620px;
+  font-weight: 800;
+}
+
 .app-page code {
   display: inline-block;
   max-width: 100%;
@@ -266,6 +271,30 @@ a {
   color: #ffffff;
   font-size: 0.82rem;
   overflow-wrap: anywhere;
+}
+
+.beta-code-card {
+  display: grid;
+  gap: 8px;
+  margin: 18px 0;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-left: 4px solid var(--accent);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.beta-code-card strong {
+  font-size: clamp(1.6rem, 5vw, 2.35rem);
+  letter-spacing: 0;
+}
+
+.beta-code-card span,
+.beta-code-card small {
+  color: #ffffff;
+}
+
+.beta-code-card .button {
+  width: fit-content;
 }
 
 .app-page .app-download-section .button {

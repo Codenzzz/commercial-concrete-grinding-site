@@ -8,6 +8,14 @@ const assistantPanel = document.querySelector("[data-assistant-panel]");
 const assistantClose = document.querySelector("[data-assistant-close]");
 const assistantMessages = document.querySelector("[data-assistant-messages]");
 const assistantActions = document.querySelector("[data-assistant-actions]");
+const betaCodeTarget = document.querySelector("[data-beta-code]");
+const betaExpiryTarget = document.querySelector("[data-beta-expiry]");
+const betaCopyButton = document.querySelector("[data-copy-beta-code]");
+
+const betaCodeWindowMs = 48 * 60 * 60 * 1000;
+const betaCodeSalt = "ccg-flooring-safety-pack-2026-public-beta";
+const betaAppVersion = "1.0.0";
+const betaPackageId = "nz.co.flooringsafetypack.app";
 
 if (yearTarget) {
   yearTarget.textContent = new Date().getFullYear();
@@ -110,6 +118,59 @@ function clearAssistantActions() {
 function buildAssistantMailto() {
   const email = buildAssistantEmail();
   return email.mailto;
+}
+
+function betaHash(value) {
+  let hash = 2166136261;
+  for (let index = 0; index < value.length; index += 1) {
+    hash ^= value.charCodeAt(index);
+    hash = Math.imul(hash, 16777619);
+  }
+  return hash >>> 0;
+}
+
+function betaCodeForWindow(windowIndex) {
+  const hash = betaHash(`${betaCodeSalt}:${betaPackageId}:${betaAppVersion}:${windowIndex}`);
+  const digits = String(hash % 100000000).padStart(8, "0");
+  return `FSP-${digits.slice(0, 4)}-${digits.slice(4)}`;
+}
+
+function currentBetaCode() {
+  return betaCodeForWindow(Math.floor(Date.now() / betaCodeWindowMs));
+}
+
+function renderBetaCode() {
+  if (!betaCodeTarget) return;
+
+  const now = Date.now();
+  const windowIndex = Math.floor(now / betaCodeWindowMs);
+  const expiresAt = new Date((windowIndex + 1) * betaCodeWindowMs);
+  const code = currentBetaCode();
+  betaCodeTarget.textContent = code;
+  if (betaExpiryTarget) {
+    betaExpiryTarget.textContent = `Use this code when the Android app opens. Valid until ${expiresAt.toLocaleString("en-NZ", {
+      dateStyle: "medium",
+      timeStyle: "short"
+    })}.`;
+  }
+}
+
+renderBetaCode();
+
+if (betaCopyButton && betaCodeTarget) {
+  betaCopyButton.addEventListener("click", async () => {
+    const code = betaCodeTarget.textContent.trim();
+    if (!code) return;
+    try {
+      await navigator.clipboard.writeText(code);
+      betaCopyButton.textContent = "Copied";
+      window.setTimeout(() => {
+        betaCopyButton.textContent = "Copy beta code";
+      }, 1800);
+    } catch {
+      betaCopyButton.textContent = code;
+    }
+  });
 }
 
 function buildAssistantEmail() {
