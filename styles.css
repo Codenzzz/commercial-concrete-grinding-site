@@ -251,6 +251,54 @@ a {
   color: #d8d4ce;
 }
 
+.app-page .app-hero {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.94), rgba(18, 8, 10, 0.78) 46%, rgba(13, 122, 109, 0.28)),
+    url("assets/concrete-grinding-hero.png") center / cover;
+}
+
+.app-page code {
+  display: inline-block;
+  max-width: 100%;
+  padding: 4px 6px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(0, 0, 0, 0.32);
+  color: #ffffff;
+  font-size: 0.82rem;
+  overflow-wrap: anywhere;
+}
+
+.app-page .app-download-section .button {
+  margin-top: 8px;
+}
+
+.app-link-panel {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.legal-content {
+  width: min(var(--max), calc(100% - 36px));
+  margin: 0 auto;
+  padding: clamp(34px, 7vw, 82px) 0;
+}
+
+.legal-copy {
+  max-width: 860px;
+}
+
+.legal-copy h1,
+.legal-copy h2 {
+  color: #ffffff;
+}
+
+.legal-copy a {
+  color: #ff7378;
+}
+
 .hero-inner {
   width: min(var(--max), calc(100% - 36px));
   margin: 0 auto;
