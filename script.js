@@ -11,11 +11,14 @@ const assistantActions = document.querySelector("[data-assistant-actions]");
 const betaCodeTarget = document.querySelector("[data-beta-code]");
 const betaExpiryTarget = document.querySelector("[data-beta-expiry]");
 const betaCopyButton = document.querySelector("[data-copy-beta-code]");
+const betaCodeCard = document.querySelector("[data-beta-code-card]");
 
-const betaCodeWindowMs = 48 * 60 * 60 * 1000;
-const betaCodeSalt = "ccg-flooring-safety-pack-2026-public-beta";
-const betaAppVersion = "1.0.0";
-const betaPackageId = "nz.co.flooringsafetypack.app";
+const betaCodeWindowDays = Number(betaCodeCard?.dataset.betaWindowDays || "7");
+const betaCodeWindowMs = betaCodeWindowDays * 24 * 60 * 60 * 1000;
+const betaCodeSalt = betaCodeCard?.dataset.betaSalt || "ccg-flooring-safety-pack-2026-public-beta";
+const betaAppVersion = betaCodeCard?.dataset.betaVersion || "1.0.0";
+const betaPackageId = betaCodeCard?.dataset.betaPackage || "nz.co.flooringsafetypack.app";
+const betaCodePrefix = betaCodeCard?.dataset.betaPrefix || "FSP";
 
 if (yearTarget) {
   yearTarget.textContent = new Date().getFullYear();
@@ -132,7 +135,7 @@ function betaHash(value) {
 function betaCodeForWindow(windowIndex) {
   const hash = betaHash(`${betaCodeSalt}:${betaPackageId}:${betaAppVersion}:${windowIndex}`);
   const digits = String(hash % 100000000).padStart(8, "0");
-  return `FSP-${digits.slice(0, 4)}-${digits.slice(4)}`;
+  return `${betaCodePrefix}-${digits.slice(0, 4)}-${digits.slice(4)}`;
 }
 
 function currentBetaCode() {
