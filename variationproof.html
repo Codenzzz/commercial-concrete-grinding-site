@@ -70,8 +70,8 @@
           <span>Show what changed, why it was outside scope and when it was sent</span>
         </div>
         <div>
-          <strong>Approval capture</strong>
-          <span>Free starts with PDFs; Pro is built around link approval and locked records</span>
+          <strong>Local acceptance</strong>
+          <span>Builder acceptance locks the record on the phone before SMS proof is sent</span>
         </div>
       </section>
 
@@ -82,13 +82,13 @@
           <p>
             This is a direct Android APK download for checking VariationProof on a real phone before Google Play
             production release. The beta is local-first; TapSend SMS Proof uses your phone's SMS composer, and real
-            public approval links, billing, Xero OAuth and MYOB API connections are not live in this APK yet.
+            Play Billing and Xero OAuth are not live in this APK yet.
           </p>
           <p>
             Current Android package: <strong>nz.co.variationproof.app</strong><br />
-            App version: <strong>0.1.3</strong><br />
+            App version: <strong>0.1.4</strong><br />
             APK SHA-256:
-            <code>DD08641A984AB2134FD089617068CDFEB2D8A63A94B3D715C8AD237815282C68</code>
+            <code>CE7C22E162CBFC197FDE8DADE57D80F76DCDA1234AAC60A3CC45A916684176F6</code>
           </p>
           <div
             class="beta-code-card"
@@ -96,7 +96,7 @@
             data-beta-prefix="VPF"
             data-beta-salt="ccg-variationproof-2026-public-beta"
             data-beta-package="nz.co.variationproof.app"
-            data-beta-version="0.1.3"
+            data-beta-version="0.1.4"
             data-beta-window-days="7"
           >
             <span>Current 7-day beta code</span>
@@ -110,17 +110,49 @@
           <div>
             <span>01</span>
             <strong>Free forever</strong>
-            <p>5 variation PDF exports per month, up to 3 photos per exported PDF and VariationProof branding.</p>
+            <p>Unlimited VariationProof-branded PDFs, local acceptance, proof hashes, SMS proof, PDF sharing, local history and CSV export.</p>
           </div>
           <div>
             <span>02</span>
-            <strong>Pro branding</strong>
-            <p>Unlimited variations, more photos, company logo, business details and custom terms/footer on PDFs.</p>
+            <strong>$2 Pro branding</strong>
+            <p>Add your company logo, business details and payment terms to PDFs, with reduced VariationProof branding.</p>
           </div>
           <div>
             <span>03</span>
-            <strong>Money capture workflow</strong>
-            <p>Accepted variations should lock the record, then become draft invoices in Xero or sales invoices in MYOB.</p>
+            <strong>$2 Pro Xero</strong>
+            <p>Send accepted, locked variations to Xero as draft invoices when the production Xero connection is enabled.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section split app-download-section" aria-label="VariationProof tiers">
+        <div class="section-copy">
+          <p class="eyebrow">Free vs Pro</p>
+          <h2>Free core. Tiny paid unlock.</h2>
+          <p>
+            The free app is the full proof loop: create the variation, add photos, price it, generate the PDF, capture
+            local acceptance, lock the artefact, create proof hashes, send SMS proof, share the PDF and export CSV.
+          </p>
+          <p>
+            Pro is deliberately small at $2/month. It unlocks contractor branding on PDFs and Xero draft invoice export.
+            The core evidence and acceptance workflow stays free.
+          </p>
+        </div>
+        <div class="proof-list" aria-label="VariationProof plan comparison">
+          <div>
+            <span>Free</span>
+            <strong>VariationProof branded</strong>
+            <p>Create unlimited usable variation records with professional VariationProof footer branding.</p>
+          </div>
+          <div>
+            <span>Pro</span>
+            <strong>$2/month</strong>
+            <p>Use your logo, company details, GST/NZBN/ABN, custom footer/payment terms and Xero export.</p>
+          </div>
+          <div>
+            <span>No</span>
+            <strong>SaaS bloat</strong>
+            <p>No login, hosted acceptance link, cloud database, AI call, backend verification or mandatory sync is required.</p>
           </div>
         </div>
       </section>
@@ -139,29 +171,19 @@
         </div>
         <div class="proof-list" aria-label="Pro workflow">
           <div>
-            <span>Pro</span>
-            <strong>Approval capture</strong>
-            <p>Capture builder acceptance, timestamp it, lock the accepted record and keep the evidence trail clean.</p>
+            <span>Free</span>
+            <strong>Local acceptance</strong>
+            <p>Capture builder acceptance on the phone, timestamp it, lock the accepted record and keep the evidence trail clean.</p>
           </div>
           <div>
-            <span>MVP</span>
+            <span>Free</span>
             <strong>TapSend SMS Proof</strong>
             <p>Accept locally, lock the record, generate proof hashes, then open the SMS app with a prefilled proof message.</p>
           </div>
           <div>
             <span>Pro</span>
             <strong>Xero draft invoice</strong>
-            <p>Send accepted variations straight to Xero as draft invoices, with the accepted PDF attached.</p>
-          </div>
-          <div>
-            <span>MVP</span>
-            <strong>MYOB sales invoice</strong>
-            <p>After approval, send the accepted variation to MYOB as a sales invoice. The beta includes a MYOB TXT export.</p>
-          </div>
-          <div>
-            <span>MVP</span>
-            <strong>Accounting exports</strong>
-            <p>The Android beta includes Xero CSV and MYOB TXT exports before the direct accounting connections.</p>
+            <p>Send accepted variations to Xero as draft invoices. The contractor still reviews and sends from Xero.</p>
           </div>
         </div>
       </section>
